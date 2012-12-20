@@ -31,7 +31,7 @@
                         break;
 
                    case null :
-                        if ($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] != $_SERVER['SERVER_NAME'].'/mysite/register.php') {
+                        if ($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'] != $_SERVER['SERVER_NAME'].'/log-in/register.php') {
                         header('Location: register.php');
                        }
                         break;
@@ -39,7 +39,7 @@
             }   
 
 // Check, if user is already login, then jump to welcome page
-if ((isset($_SESSION['useremail'])) && (($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']) != $_SERVER['SERVER_NAME'].'/mysite/welcome.php')) {
+if ((isset($_SESSION['useremail'])) && (($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']) != $_SERVER['SERVER_NAME'].'/log-in/welcome.php')) {
     header('Location: welcome.php');
 }
 ?>
