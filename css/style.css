@@ -1,0 +1,290 @@
+/* 
+    Document   : style
+    Created on : Dec 12, 2012, 1:05:26 PM
+    Author     : Hesam
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/* Global */
+body {
+    font-family:AMBROSIA, Verdana;
+    font-size: 1.3em;
+    background: #F6F6F6;
+
+}
+#wrapper {
+    width: 100%;
+    height: auto;
+    /*background:url(../img/bg.jpg); */
+}
+#mddl_scr_block {
+    width: 20em;
+    max-width: 350px;
+    height: 490px;
+    margin: 0 auto;
+    position: relative;
+}
+.right {
+    float: right;
+}
+.left{
+    float: left;
+}
+.center {
+    margin: 0 auto;
+}
+.dotte {
+    margin-bottom: 0.5em;
+    text-align: center;
+    color: #B9B9B9;
+    text-shadow: 1px 1px 0 white;
+    font-size: 80%;
+}
+.error {
+    clear: both;
+    margin: 0 auto;
+    max-width: 12em;
+    padding: 1em 2em;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    font-size: 110%;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #000;
+    position: relative;
+    top: 10px;  
+    z-index: 999999999;
+}
+.error:before {
+    content: 'x ';
+    font-family: MPN;
+    color: #ff6565;
+}
+#logo h1{ 
+    font-family: pictoserie;
+    font-size: 999%;
+    text-align: center;
+}
+#register h1{
+    text-align: center;
+    font-size: 200%;
+    padding: 2.5em 0 0.5em 0;
+    color: #666;
+}
+#wlcmssg #logo h1{
+    font-size: 1400%;
+    color: #944D0C;
+    transform: rotate(15deg);
+    -webkit-transform: rotate(15deg); 
+    -moz-transform: rotate(15deg);
+    /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);*/
+}
+#wlcmssg h2{
+    text-transform: uppercase;
+    font-size: 170%;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #AAA;
+    border-bottom: 1px dotted #aaa;
+    padding-bottom: .5em;
+}
+#wlcmssg h2 span{
+    font-size: 160%;
+    text-transform: capitalize;
+}
+.btn_frame{
+    margin-bottom: .5em;
+    padding: 5px 5px 8px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    box-shadow: inset 0px 1px 2px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: inset 0px 1px 2px rgba(50,50,50,0.5);
+    -webkit-box-shadow: inset 0px 1px 2px rgba(50, 50, 50, 0.5);
+}
+a.facebook_btn{
+    color: #fff;
+    text-decoration: none;
+    
+    background: #3B5998;
+    background: -moz-linear-gradient(top, #3B5998 0%, #3B5998 50%, #325190 50%, #325190 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3B5998), color-stop(50%, #3B5998), color-stop(50%, #325190), color-stop(100%, #325190));
+    background: -webkit-linear-gradient(top, #3B5998 0%, #3B5998 50%, #325190 50%, #325190 100%);
+    background: -o-linear-gradient(top, #3B5998 0%, #3B5998 50%, #325190 50%, #325190 100%);
+    background: -ms-linear-gradient(top, #3B5998 0%, #3B5998 50%, #325190 50%, #325190 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3b5998', endColorstr='#325190',GradientType=0 );
+    background: linear-gradient(top, #3B5998 0%,#3B5998 50%,#325190 50%,#325190 100%);
+    box-shadow: 0px 3px 0px #213B6D;
+    -moz-box-shadow: 0px 3px 0px #213b6d;
+    -webkit-box-shadow: 0px 3px 0px #213B6D;
+    
+    line-height: 2.17em;
+    text-align: center;
+    position:relative;
+    display: block;
+    height: 45px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+}
+a.facebook_btn:hover{
+    background: #2B4582;
+    background: -moz-linear-gradient(top, #2B4582 0%, #2B4582 49%, #243D79 49%, #2B4582 100%, #243D79 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2B4582), color-stop(49%, #2B4582), color-stop(49%, #243D79), color-stop(100%, #2B4582), color-stop(100%, #243D79));
+    background: -webkit-linear-gradient(top, #2B4582 0%, #2B4582 49%, #243D79 49%, #2B4582 100%, #243D79 100%);
+    background: -o-linear-gradient(top, #2B4582 0%, #2B4582 49%, #243D79 49%, #2B4582 100%, #243D79 100%);
+    background: -ms-linear-gradient(top, #2B4582 0%, #2B4582 49%, #243D79 49%, #2B4582 100%, #243D79 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2b4582', endColorstr='#243d79',GradientType=0 );
+    background: linear-gradient(top, #2B4582 0%,#2B4582 49%,#243D79 49%,#2B4582 100%,#243D79 100%);
+    box-shadow: 0px 3px 0px #172D59;
+    -moz-box-shadow: 0px 3px 0px #172d59;
+    -webkit-box-shadow: 0px 3px 0px #172D59;
+}
+a.facebook_btn:active,
+.orange_btn:active,
+.green_btn:active{
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    top: 3px;    
+}
+a.facebook_btn:before{
+    content: 'G';
+    font-size: 250%;
+    font-family: MPN;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    color: #fff;
+}
+
+.green_btn {
+    background: #85FF00;
+    background: -moz-linear-gradient(top, #B8FF00 0%, #B8FF00 50%, #85FF00 50%, #85FF00 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #B8FF00), color-stop(50%, #B8FF00), color-stop(50%, #85FF00), color-stop(100%, #85FF00));
+    background: -webkit-linear-gradient(top, #B8FF00 0%, #B8FF00 50%, #85FF00 50%, #85FF00 100%);
+    background: -o-linear-gradient(top, #B8FF00 0%, #B8FF00 50%, #85FF00 50%, #85FF00 100%);
+    background: -ms-linear-gradient(top, #B8FF00 0%, #B8FF00 50%, #85FF00 50%, #85FF00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B8FF00', endColorstr='#85FF00',GradientType=0 );
+    background: linear-gradient(top, #B8FF00 0%,#B8FF00 50%,#85FF00 50%,#85FF00 100%);
+    box-shadow: 0px 3px 0px #58CE09;
+    -moz-box-shadow: 0px 3px 0px #58CE09;
+    -webkit-box-shadow: 0px 3px 0px #58CE09;
+}
+.green_btn:hover {
+    background: #7ae900;
+    background: -moz-linear-gradient(top, #adf000 0%, #adf000 50%, #7ae900 50%, #7ae900 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #adf000), color-stop(50%, #adf000), color-stop(50%, #7ae900), color-stop(100%, #7ae900));
+    background: -webkit-linear-gradient(top, #adf000 0%, #adf000 50%, #7ae900 50%, #7ae900 100%);
+    background: -o-linear-gradient(top, #adf000 0%, #adf000 50%, #7ae900 50%, #7ae900 100%);
+    background: -ms-linear-gradient(top, #adf000 0%, #adf000 50%, #7ae900 50%, #7ae900 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#adf000', endColorstr='#7ae900',GradientType=0 );
+    background: linear-gradient(top, #adf000 0%,#adf000 50%,#7ae900 50%,#7ae900 100%);
+}
+.orange_btn {
+    background: #FFAD00;
+    background: -moz-linear-gradient(top, #FFAD00 0%, #FFAD00 50%, #FFA300 50%, #FFA300 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFAD00), color-stop(50%, #FFAD00), color-stop(50%, #FFA300), color-stop(100%, #FFA300));
+    background: -webkit-linear-gradient(top, #FFAD00 0%, #FFAD00 50%, #FFA300 50%, #FFA300 100%);
+    background: -o-linear-gradient(top, #FFAD00 0%, #FFAD00 50%, #FFA300 50%, #FFA300 100%);
+    background: -ms-linear-gradient(top, #FFAD00 0%, #FFAD00 50%, #FFA300 50%, #FFA300 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFAD00', endColorstr='#FFA300',GradientType=0 );
+    background: linear-gradient(top, #FFAD00 0%,#FFAD00 50%,#FFA300 50%,#FFA300 100%);
+    box-shadow: 0px 3px 0px #FF7000;
+    -moz-box-shadow: 0px 3px 0px #FF7000;
+    -webkit-box-shadow: 0px 3px 0px #FF7000;
+}
+.orange_btn:hover {
+    background: #FF7A00;
+    background: -moz-linear-gradient(top, #FF9900 0%, #FF9900 50%, #ff9000 50%, #ff9000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FF9900), color-stop(50%, #FF9900), color-stop(50%, #ff9000), color-stop(100%, #ff9000));
+    background: -webkit-linear-gradient(top, #FF9900 0%, #FF9900 50%, #ff9000 50%, #ff9000 100%);
+    background: -o-linear-gradient(top, #FF9900 0%, #FF9900 50%, #ff9000 50%, #ff9000 100%);
+    background: -ms-linear-gradient(top, #FF9900 0%, #FF9900 50%, #ff9000 50%, #ff9000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9900', endColorstr='#ff9000',GradientType=0 );
+    background: linear-gradient(top, #FF9900 0%,#FF9900 50%,#ff9000 50%,#ff9000 100%);
+}
+/* Forms */
+
+input[type="password"],input[type="email"],input[type="text"]{
+    margin: 0 auto 0.5em 0.25em;
+    width: 19.5em;
+    height: 45px;
+    border-radius: 5px;
+    border-width: 1px;
+    background: rgba(255, 255, 255, .5);
+    font-size: 80%;
+    font-family: Verdana;    
+    color: #aaa;
+    padding: 0 8px;
+}
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="text"]:focus {
+    border-color: #801111;
+    box-shadow: 0 0 10px #aaa;
+    color:#000;
+}
+input[type="password"]{
+    margin-bottom: 1em;
+}
+input[type="submit"] {
+    width: 160px;
+    padding: 0;
+    font-size: 100%;
+    font-family: AMBROSIA;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    line-height: 2.17em;
+    text-align: center;
+    position:relative;
+    display: block;
+    height: 45px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+}
+#wlcmssg input[type="submit"]{
+    padding: 0;
+    width: 100%;
+    background: none;
+    color: #A3A3A3;
+    text-shadow: 1px 1px 1px white;
+}
+#wlcmssg input[type="submit"]:hover{
+    text-decoration: underline;
+    color: #944D0C;
+}
+/* Fonts */
+@font-face
+{
+font-family: AMBROSIA;
+src:url(../font/AMBROSIA.ttf);
+}
+@font-face
+{
+font-family: pictoserie;
+src:url(../font/pictoserie.ttf);
+}
+@font-face {
+	font-family: MPN;
+	src: url('../font/modernpics-webfont.eot');
+	src: url('../font/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../font/modernpics-webfont.woff') format('woff'),
+		 url('../font/modernpics-webfont.ttf') format('truetype'),
+		 url('../font/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
