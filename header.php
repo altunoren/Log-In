@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php ob_start(); ?>
 <?php include 'class.db.php'; ?>
 <?php include 'functions.php'; ?>
 <?php include '/app/app.fb.php'; ?>
@@ -36,13 +36,14 @@
                        }
                         break;
                  }
-            }   
+            }
 
 // Check, if user is already login, then jump to welcome page
 if ((isset($_SESSION['useremail'])) && (($_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']) != $_SERVER['SERVER_NAME'].'/log-in/welcome.php')) {
     header('Location: welcome.php');
 }
 ?>
+<!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

@@ -20,14 +20,16 @@
         global $resultQuery;
         if (isset($_POST[$submit]))
          {
+            $connect = new DB();
+            
             $where = array (
                      'email' => mysql_real_escape_string($_POST['useremail']),
                      'pass' => mysql_real_escape_string(md5($_POST['userpass']))
                             );
-            $connect = new DB();
+            
             $connect->selectWhere('users', $where);
+            
             // Check username and password match
-            #exit('Stop: ' . mysql_num_rows($resultQuery));
             if (mysql_num_rows($resultQuery) == 1) {
                       // Set user email session variable
                       $_SESSION['useremail'] = $_POST['useremail'];
@@ -58,6 +60,8 @@
     function createAccount(){
                   if (isset($_POST['crtAcc']))
           {
+                    $connect = new DB();
+                    
                     $email = strtolower(mysql_real_escape_string($_POST['useremail']));
                     $pass = mysql_real_escape_string(md5($_POST['userpass'])); 
                     $nameF = mysql_real_escape_string($_POST['userFirstName']);
@@ -66,10 +70,10 @@
            if ( $email !="" && $pass != "" && $nameF != "" && $nameL != "" )
            {
                
-             // Check email is exsit or not
-             $connect = new DB();
+             
              $connect->select('users', 'email');
 
+             // Check email is exsit or not
              $match = isMatch('email',$email);
 
              switch ($match)
