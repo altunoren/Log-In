@@ -1,7 +1,8 @@
 <?php ob_start(); ?>
 <?php include 'class.db.php'; ?>
 <?php include 'functions.php'; ?>
-<?php include '/app/app.fb.php'; ?>
+<?php include 'sdk/facebook.php'; ?>
+<?php include 'app/app.fb.php'; ?>
 <?php
 
             // Check, if user is already login with facebook, 
